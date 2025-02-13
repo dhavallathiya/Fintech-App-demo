@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="12dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Source Account -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sourceAccountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source Account"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sourceAccountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="John Doe - 123456789"
+            android:textColor="#222"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Destination Account -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/destinationAccountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination Account"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/destinationAccountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="Jane Smith - 987654321"
+            android:textColor="#222"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Transfer Amount -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/amountLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount Transferred"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$500"
+            android:textColor="#007BFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Transaction Time -->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/transactionTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Transaction Time"
+            android:textColor="#666"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/transactionTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feb 12, 2025 - 14:30 PM"
+            android:textColor="#222"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

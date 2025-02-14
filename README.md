@@ -1,35 +1,38 @@
-# Account Management Android App
+# Account Management App
 
 ## Overview
-This is an Android application for managing user accounts, including balance tracking, transfers, and transaction history. The app is built using Kotlin with a modern UI and structured architecture.
+This is an Android application for managing user accounts, displaying account balances, and transferring funds. The app follows the MVVM architecture and is built using Kotlin.
 
 ## Features
-- View account details (account holder name, balance, and account number)
-- Transfer money between accounts
-- View transaction history
-- Modern UI with a consistent font and themed status bar
-- Dummy data for testing
+- User authentication using Firebase Authentication
+- Display a list of user accounts with RecyclerView
+- Local database storage using Room
+- Real-time data observation with LiveData
+- UI designed with Material Design principles
+- Status bar color customization and consistent font family
 
 ## Technologies Used
-- **Language:** Kotlin
-- **UI Framework:** Jetpack Compose / XML
-- **Architecture:** MVVM
-- **Storage:** Room Database (for local persistence)
-- **State Management:** LiveData & ViewModel
+- **Architecture:** MVVM (Model-View-ViewModel)
+- **Programming Language:** Kotlin
+- **Libraries Used:**
+  - Firebase Authentication for user login
+  - RecyclerView for displaying lists
+  - Room for local database management
+  - LiveData for data observation
+  - ViewModel for managing UI-related data
 
 ## Installation
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/yourrepository.git
+   ```bash
+   git clone https://github.com/yourusername/your-repo.git
    ```
-2. Open the project in **Android Studio**.
-3. Sync dependencies and build the project.
-4. Run the application on an emulator or a physical device.
+2. Open the project in Android Studio.
+3. Sync Gradle dependencies.
+4. Run the app on an emulator or a physical device.
 
 ## Dummy Data
-The following dummy data is used for testing account management:
 ```kotlin
-val accounts = listOf(
+val dummyAccounts = listOf(
     Account(1, "Emma Wilson", 2500.0, "112233445"),
     Account(2, "Michael Brown", 8000.0, "998877665"),
     Account(3, "Sophia Martinez", 4500.0, "556677889"),
@@ -41,6 +44,8 @@ val accounts = listOf(
     Account(9, "Bob Johnson", 7000.0, "567890123")
 )
 ```
+
+---
 ![1](https://github.com/user-attachments/assets/8dfb3764-5365-43b2-86fe-5aa8777bf808)
 ![22](https://github.com/user-attachments/assets/d16f5bfa-0192-4f19-8465-10ded87a3aba)
 ![33](https://github.com/user-attachments/assets/1e3be3f3-445a-4017-a5ec-49471f26ff52)
